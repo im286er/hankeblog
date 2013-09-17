@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include _inc.html %>
+</head>
+<body>
+	<% include header.html %>
+	<div id="container">
+		<div class="share">
+			<ul class="list">
+				<li><a href="/images/pic01.jpg" data-lightbox="showpic" title=""><img src="/images/pic01.jpg" alt=""></a></li>
+				<li><a href="/images/pic02.jpg" data-lightbox="showpic" title=""><img src="/images/pic02.jpg" alt=""></a></li>
+				<li><a href="/images/pic03.jpg" data-lightbox="showpic" title=""><img src="/images/pic03.jpg" alt=""></a></li>
+				<li><a href="/images/pic04.jpg" data-lightbox="showpic" title=""><img src="/images/pic04.jpg" alt=""></a></li>
+				<li><a href="/images/pic05.jpg" data-lightbox="showpic" title=""><img src="/images/pic05.jpg" alt=""></a></li>
+				<li><a href="/images/pic06.jpg" data-lightbox="showpic" title=""><img src="/images/pic06.jpg" alt=""></a></li>
+				<li><a href="/images/pic07.jpg" data-lightbox="showpic" title=""><img src="/images/pic07.jpg" alt=""></a></li>
+				<li><a href="/images/pic08.jpg" data-lightbox="showpic" title=""><img src="/images/pic08.jpg" alt=""></a></li>
+				<li><a href="/images/pic09.jpg" data-lightbox="showpic" title=""><img src="/images/pic09.jpg" alt=""></a></li>
+				<li><a href="/images/pic10.jpg" data-lightbox="showpic" title=""><img src="/images/pic10.jpg" alt=""></a></li>
+			</ul>
+		</div>
+		<!-- share to here -->
+		<!-- <div class="photo-wrap">
+			<div class="photo-demo">
+		    	<div class="banner"><img src="images/banner.png"></div>
+		    	<ul>
+		            <li class="but_on"><h1>壁纸</h1></li>
+		            <li class="but_out"><h1>动态壁纸</h1></li>
+		        </ul>
+		        <div class="photo-box">
+		            <ul class="photo-list">
+		                <li><a href="#"><span><img src="images/pic01.png"></span><span>美女</span></a></li>
+		                <li><a href="#"><span><img src="images/pic02.png"></span><span>情感</span></a></li>
+		                <li><a href="#"><span><img src="images/pic03.png"></span><span>风景</span></a></li>
+		                <li><a href="#"><span><img src="images/pic04.png"></span><span>动漫</span></a></li>
+		                <li><a href="#"><span><img src="images/pic01.png"></span><span>美女</span></a></li>
+		                <li><a href="#"><span><img src="images/pic02.png"></span><span>情感</span></a></li>
+		                <li><a href="#"><span><img src="images/pic03.png"></span><span>风景</span></a></li>
+		                <li><a href="#"><span><img src="images/pic04.png"></span><span>动漫</span></a></li>
+		            </ul>
+		    	</div>
+			</div>
+		</div> -->
+    </div>
+	<% include wallpapers.html %>
+	<% include footer.html %>
+	<script type="text/javascript" src="/sea-modules/seajs/seajs/2.1.1/sea.js"></script>
+	<script type="text/javascript">
+		seajs.config({
+			base: "/sea-modules/",
+			alias: {
+				"jquery": "jquery/jquery/1.10.1/jquery.js"
+			}
+		});
+
+		seajs.use(["jquery","/javascripts/main"]);
+	</script>
+</body>
+</html>
