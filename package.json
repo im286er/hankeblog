@@ -1,5 +1,5 @@
 {
-  "name": "application-name",
+  "name": "node-blog",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -11,5 +11,9 @@
     "ejs": "*",
     "stylus": "*",
     "markdown":"*"
+  },
+   "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
   }
 }
