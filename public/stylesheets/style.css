@@ -168,11 +168,6 @@ a {
 #header .hbox .hright a {
   margin-left: 10px;
 }
-@media all and (min-width : 320px) and (max-width : 480px) {
-  .hright {
-    display: none;
-  }
-}
 #header:hover {
   background: rgba(255,255,255,0.8);
 }
@@ -393,7 +388,6 @@ a {
   background: rgba(255,255,255,0.3);
   text-align: center;
   line-height: 300px;
-  color: #f00;
   float: left;
   margin: 0 30px 20px 0;
 }
@@ -404,4 +398,18 @@ a {
 }
 .share .list img:hover {
   opacity: 1;
+}
+@media all and (min-width : 320px) and (max-width : 480px) {
+  .hright {
+    display: none;
+  }
+  .share,
+  .share .list {
+    width: auto;
+  }
+  .share .list li {
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
 }
