@@ -409,7 +409,7 @@ a {
   }
   .share .list li {
     float: none;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
     display: block;
   }
 }
