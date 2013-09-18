@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*
+ * 1rem=20px for 320px(中低端分辨率).
+ * 1rem=22.5px for 360px(高端分辨率).
+ */
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+html{font-size:20px; -webkit-text-size-adjust:none;}
+@media all and (min-width:359px){.uc-hack{font-size:22.5px;}}
+@media all and (min-width:359px) and (-webkit-min-device-pixel-ratio:1.5){html{font-size:22.5px;}}
+
+body,div,p,form,input,h1,h2,h3,h4,h5,ul,ol,li,dl,dt,dd,table,tbody,tr,td,textarea,img,iframe,figure{
+	margin:0; padding:0; list-style:none; vertical-align:middle;
+}
+
+body{
+	font:14px/1.5 "\5FAE\8F6F\96C5\9ED1",Helvetica,Arial; color:#000;
+	//-webkit-user-select:none;
+	-webkit-text-size-adjust:none;
+}
+
+img{border:0; /*-webkit-touch-callout:none;*/}
+
+a,*[onclick]{-webkit-tap-highlight-color:rgba(0,0,0,0); text-decoration:none; color:#000;}
+
+a:active,a:hover{outline:none;}
+
+/* 来自yahoo, 让标题都自定义, 适应多个系统应用 */
+h1,h2,h3,h4,h5,h6 {font-size:100%; font-weight:500;}
