@@ -63,13 +63,6 @@ a
 	margin-left:10px;
 }
 
-<<<<<<< HEAD
-=======
-@media all and (min-width : 320px) and (max-width : 480px) {
-	.hright{display:none;}
-}
-
->>>>>>> 29924bcd6f42045658cfff7b3d636640b4f6a197
 #header:hover{
 	background: rgba(255,255,255,.8);
 }
@@ -284,7 +277,7 @@ a
 }
 .share .list li{
 	width:300px; height:200px; background:rgba(255,255,255,.3);
-	text-align:center; line-height:300px; color:red;
+	text-align:center; line-height:300px;
 	float:left; margin:0 30px 20px 0;
 }
 
@@ -294,4 +287,10 @@ a
 
 .share .list img:hover{
 	opacity:1;
+}
+
+@media all and (min-width : 320px) and (max-width : 480px) {
+	.hright{display:none;}
+	.share,.share .list{width:auto;}
+	.share .list li{margin:0 auto 10px auto; float:none;}
 }
