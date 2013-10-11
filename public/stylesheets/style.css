@@ -154,6 +154,12 @@ a {
   border-radius: 0 0 0 5px;
   box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
+<<<<<<< HEAD
+=======
+#header .hleft {
+  margin-right: 50px;
+}
+>>>>>>> 059dad95db00b977bb8b10978e2e95c1060f8cb8
 #header .hbox {
   min-width: 320px;
   max-width: 1000px;
@@ -415,6 +421,7 @@ a {
     display: block;
   }
 }
+<<<<<<< HEAD
 .box1 {
   font-size: 16px;
   display: inline-block;
@@ -426,3 +433,5 @@ a {
 .box1 i {
   margin-right: 5px;
 }
+=======
+>>>>>>> 059dad95db00b977bb8b10978e2e95c1060f8cb8
