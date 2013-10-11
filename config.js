@@ -1,7 +1,6 @@
 /*
  * Created with Sublime Text 2.
  * User: Hankewins
-<<<<<<< HEAD
  * Date: 2013-09-23
  * Time: 14:22:53
  * Contact: hankewins@gmail.com
@@ -41,12 +40,7 @@ exports.config = {
 	]
 };
 
-=======
- * Date: 2013-09-13
- * Time: 11:19:07
- * Contact: hankewins@gmail.com
- */
-
+/*
 var mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost/test');
@@ -82,4 +76,4 @@ fluffy.save(function (err, fluffy) {
   if (err) // TODO handle the error
   fluffy.speak();
 });
->>>>>>> 059dad95db00b977bb8b10978e2e95c1060f8cb8
+*/
