@@ -121,10 +121,8 @@ function checkTwitterModule(){
 
     var twitterScript = document.createElement("script");
     twitterScript.type = "text/javascript";
-    
-    
-    twitterScript.src = "https://api.twitter.com/1/statuses/user_timeline.json?screen_name="+twitterUsername+"&count=2&callback=parseTweets";
-  
+    //twitterScript.src = "https://api.twitter.com/1/statuses/user_timeline.json?screen_name="+twitterUsername+"&count=2&callback=parseTweets";
+
     //   =====================================================   
  
     // Swap the tweets   
@@ -232,9 +230,9 @@ setTimeout(function(){
              
             
              
- checkTwitterModule();
- antiscrollSetup();
- 
+//checkTwitterModule();
+antiscrollSetup();
+
 checkGoogleMap();
     })
       }
@@ -382,25 +380,15 @@ $('.map-holder').gmap3({
     //sending contact form
     $("#contact-form").submit(function(e){
         e.preventDefault();
-        if(formStatus.errorList.length==0)
-        { 
-                       $("#contact-form .submit").fadeOut(function(){
-                                      $('#loading').css('visibility','visible');
-            $.post('submit.php',$("#contact-form").serialize(),
-				
-                function(){
-						
-                   $("#contact-form").hide('slow').after('<h1>Thank you!</h1>');
-						
-						
+        if(formStatus.errorList.length==0){ 
+            $("#contact-form .submit").fadeOut(function(){
+                $('#loading').css('visibility','visible');
+                $.post('feedback',$("#contact-form").serialize(),function(){
+                    $("#contact-form").hide('slow').after('<h1>感谢您的反馈！</h1>');
                     $('#loading').css('visibility','hidden');
                     $("#contact-form .submit").removeClass('disabled');
-                }
-				
-                ); 
-                       });     
- 
-				
+                }); 
+            });     
         }
 			
 			

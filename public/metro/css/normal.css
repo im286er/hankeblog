@@ -82,8 +82,9 @@ margin-top: -20px;
 }
 label.error {
     font-size: 10px;
-    margin-top: -4px;
+    margin-top: -2px;
     margin-bottom: -11px;
+    color:red;
 }
 .contact-form .submit:hover {
     background-color: #1D092C;
