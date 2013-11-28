@@ -7,7 +7,10 @@
  */
 
 var login = require('./login');
+var dashboard = require('./dashboard');
 
 module.exports = function(app){
-	app.get('/admin', login.signin);
+	app.get('/admin/login', login.signin);
+	app.get('/admin/index', dashboard.index);
+	//app.get('/admin/logout', login.signin);
 };

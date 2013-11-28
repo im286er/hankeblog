@@ -7,5 +7,5 @@
  */
 
 exports.signin = function(req, res){
-	res.render('admin/login',{"title":"login"});
+	res.render('backend/signin',{"title":"login"});
 };

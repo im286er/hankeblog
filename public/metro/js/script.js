@@ -397,53 +397,32 @@ $('.map-holder').gmap3({
     //   ===================================================== 
 
    
-    function horizontalScrollSetup(id){
-       
-     
-     
-       
-       
-               var horizonScroll=$('.current-page .antiscroll-wrap');
-        var antiEl=$('.current-page').find('.antiscroll-inner');
-   var blocksWidth=new Array();
-   var index=id;
+function horizontalScrollSetup(id){     
+    var horizonScroll=$('.current-page .antiscroll-wrap');
+    var antiEl=$('.current-page').find('.antiscroll-inner');
+    var blocksWidth=new Array();
+    var index=id;
   
-   blocksWidth[index]=0;
-  horizonScroll.find('.horizontal-scroll-item').each(function(){
-     blocksWidth[index]+= $(this).width()+parseInt($(this).css('margin-left'))+parseInt($(this).css('margin-right'));
-  });
+    blocksWidth[index]=0;
+    horizonScroll.find('.horizontal-scroll-item').each(function(){
+        blocksWidth[index]+= $(this).width()+parseInt($(this).css('margin-left'))+parseInt($(this).css('margin-right'));
+    });
 
-    
-     var initLeft=antiEl.scrollLeft();
+    var initLeft=antiEl.scrollLeft();
      
-      
-
-     $('.horizontal-scroll').parent().parent().bind('mousewheel',{minLeft:initLeft,index:index},function (event, delta) {
-        
+    $('.horizontal-scroll').parent().parent().bind('mousewheel',{minLeft:initLeft,index:index},function (event, delta) {
         event.preventDefault();
         var minLeft=event.data.minLeft;
         var index=event.data.index;
-       
-     var currentLeft = new Array();
-     var maxLeft=new Array();
-       
-       
-        currentLeft[index]=antiEl.scrollLeft();
-        
-     
-              
-                currentLeft[index] -= (delta * 10);
-    //  console.log(index,currentLeft[index],delta);
-         
-     antiEl.scrollLeft(currentLeft[index]);
-       
-       
-              
-       
-          
+           
+        var currentLeft = new Array();
+        var maxLeft=new Array();
+           
+        currentLeft[index]=antiEl.scrollLeft();   
+        currentLeft[index] -= (delta * 10);
+        //  console.log(index,currentLeft[index],delta); 
+        antiEl.scrollLeft(currentLeft[index]);
     });
-    
-  
 }
 
 
