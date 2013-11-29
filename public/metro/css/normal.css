@@ -379,6 +379,11 @@ visibility: hidden;
     padding-top: 6px;
     text-align: center;
 }
+
+.promo-avatar img{
+  width:125px;
+}
+
 .footer-holder .footer-menu li:first-child{
       margin-left: 0px;
 }
